@@ -1,0 +1,227 @@
+.navbar__sub {
+  width: 100%;
+  margin-top: 30px;
+  background: #f7ebe5;
+  padding: 15px 0;
+  .navbar__subtitle {
+    justify-content: space-between;
+    display: flex;
+    gap: 36px;
+    .subtitle__context {
+      display: flex;
+      gap: 14px;
+    }
+    .subtitle__logo {
+      display: flex;
+      gap: 30px;
+      .subtitle__select {
+        border: none;
+        background: transparent;
+      }
+      .subtitle__number {
+        display: flex;
+        gap: 5px;
+      }
+      .subtitle__logos {
+        display: none;
+      }
+      .subtitle__icon {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+.navbar__wrapper {
+  padding: 17px 0;
+  width: 100%;
+  display: flex;
+  .navbar__shop{
+    display: none;
+  }
+  .navbar__block {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    .navbar__icon{
+  display: none;
+    }
+    .navbar__context {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .navbar__select {
+        border: none;
+      }
+      .wrapper__logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .navbar__sub {
+    .navbar__subtitle {
+      .subtitle__context {
+        p:nth-child(1) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1082px) {
+  .navbar__wrapper {
+    .navbar__block {
+      .navbar__context {
+        .wrapper__logo {
+          img {
+            display: none;
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1035px) {
+  .navbar__sub {
+    .navbar__subtitle {
+      .subtitle__context {
+        p:nth-child(1) {
+          display: none;
+        }
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+      .subtitle__number:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 822px) {
+  .navbar__wrapper {
+    .navbar__block {
+      .navbar__context {
+        .navbar__select:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .navbar__sub {
+    .navbar__subtitle {
+      .subtitle__context {
+        p:nth-child(1) {
+          display: none;
+        }
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+      .subtitle__number:nth-child(2) {
+        display: none;
+      }
+      .subtitle__number:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 525.6px) {
+  .navbar__wrapper {
+    .navbar__block {
+      .navbar__context {
+        p{
+          display: none;
+        }
+        .navbar__select{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .navbar__sub {
+    .navbar__subtitle {
+      .subtitle__context {
+        p:nth-child(1) {
+          display: none;
+        }
+        p:nth-child(2) {
+          display: none;
+        }
+        p:nth-child(3) {
+          display: none;
+        }
+      }
+      .subtitle__number:nth-child(2) {
+        display: none;
+      }
+      .subtitle__number:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__wrapper {
+    background: #f7ebe5;
+    .navbar__shop{
+      display: block;
+    }
+    .navbar__block{
+      .navbar__icon{
+        img{
+          width: 30px;
+        }
+        display: block;
+      }
+    }
+  }
+  .navbar__sub {
+    display: none;
+    .navbar__subtitle {
+      .subtitle__context {
+        p:nth-child(1) {
+          display: none;
+        }
+        p:nth-child(2) {
+          display: none;
+        }
+        p:nth-child(3) {
+          display: none;
+        }
+      }
+      .subtitle__number:nth-child(2) {
+        display: none;
+      }
+      .subtitle__number:nth-child(4) {
+        display: none;
+      }
+      .subtitle__logo {
+        display: none;
+      }
+      .subtitle__logos {
+        display: block;
+      }
+    }
+  }
+}
